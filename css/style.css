@@ -41,9 +41,15 @@
 
 /*miscellaneous*/
 
+h3 {
+    font-size: 1.2rem;
+    color: var(--color-white);
+    
+}
+
 h4 {
+    font-size: 1rem;
     color: var(--color-grey);
-    display: inline-block
 }
 
 img {
@@ -91,6 +97,7 @@ a {
     display: flex;
     flex-flow: column;
     justify-content: space-between;
+    padding: 20px;
 }
 
 .logo-playlist-wrapper {
@@ -99,6 +106,21 @@ a {
 
 .logo-wrapper>img {
     width: 150px;
+    padding: 10px;
+}
+
+.option-wrapper {
+    padding: 10px 0px;
+}
+
+.option>*{
+    display: inline-block;
+    vertical-align: middle;
+    padding: 5px 0px;
+}
+
+.playlist-wrapper>h3,.add-wrapper {
+    padding: 5px 0px;
 }
 
 .add {
@@ -121,8 +143,15 @@ a {
     font-size: 1.1rem;
 }
 
+.playlist-wrapper>ul>li {
+    padding: 10px 0px;
+}
+
 .propic-wrapper {
     height: 50%;
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-end;
 }
 
 .install-wrapper>*{
@@ -131,29 +160,27 @@ a {
 }
 
 .bar {
-    width: 80%;
+    width: 100%;
     height: 20px;
     border-top: 2px solid var(--color-grey);
-    margin-top: 5px;
+    margin-top: 10px;
 }
 
-.propic-wrap {
+.propic {
+    display: inline-block;
     background-color: var(--color-grey);
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
     border-radius: 50%;
     overflow: hidden;
-    position: relative;
+    vertical-align: middle;
+    margin-right: 5px;
 }
 
-.propic-wrap>img {
-    
+.propic-wrap>h3 {
+    display: inline-block;
+    vertical-align: middle;
 }
-
-
- 
-
-
 
 /*main-menù*/
 
