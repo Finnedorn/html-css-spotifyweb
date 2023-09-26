@@ -42,7 +42,7 @@
 /*miscellaneous*/
 
 h3 {
-    font-size: 1.2rem;
+    font-weight: 600;
     color: var(--color-white);
     
 }
@@ -93,7 +93,7 @@ a {
 
 .sidebar {
     width: 250px;
-    background-color: #000000;
+    background-color: var(--color-black);
     display: flex;
     flex-flow: column;
     justify-content: space-between;
@@ -201,14 +201,28 @@ a {
     z-index: 1000;
     top: 0;
     right: 0;
+    display: flex;
+    flex-flow: row-reverse;
 }
+
+.cta-button-wrapper {
+    border-radius: 50px;
+    border: 2px solid var(--color-white);
+    margin: 20px;
+    padding: 13px 50px;
+}
+
+.cta-button-wrapper>a {
+    color: var(--color-white);
+}
+
 
 /*audiobar*/
 
 .audiobar {
     width: 100%;
     height: 90px;
-    background-color: #adff2f;
+    background-color: var(--color-dark-grey);
     position: fixed;
     z-index: 1000;
     bottom: 0;
