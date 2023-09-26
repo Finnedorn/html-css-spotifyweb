@@ -21,14 +21,16 @@
 
 /*icons
 
-<i class="fa-solid fa-plus"></i> --plus/add
-<i class="fa-regular fa-circle-down"></i> --download-app
 <i class="fa-regular fa-heart"></i> --heart
 <i class="fa-regular fa-folder"></i> --folder
 <i class="fa-solid fa-list"></i> --list
 <i class="fa-solid fa-desktop"></i> --desktop
 <i class="fa-solid fa-volume-high"></i> --volume
 <i class="fa-regular fa-circle-play"></i> --play
+<i class="fa-solid fa-forward-step"></i> --step-right
+<i class="fa-solid fa-backward-step"></i>--step-left
+<i class="fa-solid fa-shuffle"></i> --shuffle
+<i class="fa-solid fa-rotate-right"></i> --repeat
 
 */
 
@@ -277,5 +279,95 @@ a {
     z-index: 1000;
     bottom: 0;
     left: 0;
+    display: flex;
+   flex-flow: row;
+   padding: 15px 20px; 
 }
 
+.sidebar-audio {
+   display: flex;
+   flex-flow: row;
+   align-items: center;
+   width: 20%;
+}
+
+.left {
+    justify-content: flex-start;
+}
+
+.right {
+    justify-content: flex-end;
+}
+
+.sidebar-audio-album {
+    display: flex;
+    flex-flow: row;
+    padding-right: 60px;
+}
+
+.sidebar-audio-album>img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+.sidebar-audio-icons>a {
+    margin-right: 10px;
+}
+
+.midbar-audio {
+    width: 80%;
+}
+
+.midbar-audio-icons, .playbar {
+    display: flex;
+    flex-flow: row;
+    width: 100%;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.midbar-audio-icons>li {
+    color: var(--color-white);
+    font-size: 1rem;
+    margin: 10px 15px;
+}
+
+.play-icon {
+    font-size: 2rem !important;
+    margin-top: 0 !important;
+}
+
+.playbar>h4 {
+    color: var(--color-white);
+    font-size: 0.8rem;
+}
+
+.playbar-total {
+    width: 500px;
+    height: 5px;
+    background-color: var(--color-grey);
+    border-radius: 50px;
+    margin: 7px 30px;
+}
+
+.playbar-listened {
+    width: 100px;
+    height: 5px;
+    background-color: var(--color-white);
+    border-radius: 50px;
+}
+
+.volbar-total {
+    width: 150px;
+    height: 5px;
+    background-color: var(--color-grey);
+    border-radius: 50px;
+}
+
+.volbar-listened {
+    width: 50px;
+    height: 5px;
+    background-color: var(--color-white);
+    border-radius: 50px; 
+}

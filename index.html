@@ -230,32 +230,45 @@
            <!--fixed audiobar (will flex space btw)-->
            <div class="audiobar">
                 <!--left-icons (flex row)-->
-                <div class="sidebar-audio">
+                <div class="sidebar-audio left">
                     <!--album and title-->
                     <div class="sidebar-audio-album">
                         <img src="img/sinister.jpeg" alt="sinister-original-soundtrack-album">
-                        <h4>Sinister</h4>
-                        <h5>Nome brano</h5>
+                        <div>
+                            <h4 class="text-white">Sinister</h4>
+                            <h5 class="text-grey">Nome brano</h5>
+                        </div>
                     </div>
                     <!--favicon and folder-->
                     <div class="sidebar-audio-icons">
-                        <a href="#"></a>
-                        <a href="#"></a>
+                        <a href="#">
+                            <i class="fa-regular fa-heart"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fa-regular fa-folder"></i>
+                        </a>
                     </div>
                 </div>
                 <!--mid-icons-->
                 <div class="midbar-audio">
                     <!--play icons-->
-                    <div class="midbar-audio-icons">
-                        <!--this will flex row-->
-                        <ul>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                        </ul>
-                    </div>
+                    <ul class="midbar-audio-icons">
+                        <li>
+                            <i class="fa-solid fa-shuffle"></i>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-backward-step"></i>
+                        </li>
+                        <li class="play-icon">
+                            <i class="fa-regular fa-circle-play"></i> 
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-forward-step"></i>  
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-rotate-right"></i>
+                        </li>
+                    </ul>
                     <!--playbar-->
                     <div class="playbar">
                         <h4>0.25</h4>
@@ -268,11 +281,17 @@
                     </div>
                 </div>
                 <!--right-icons (flex row)-->
-                <div class="sidebar-audio">
+                <div class="sidebar-audio right">
                     <div class="sidebar-audio-icons">
-                        <a href="#"></a>
-                        <a href="#"></a>
-                        <a href="#"></a>
+                        <a class="text-white" href="#">
+                            <i class=" fa-solid fa-list"></i>
+                        </a>
+                        <a class="text-white" href="#">
+                            <i class="fa-solid fa-desktop"></i>
+                        </a>
+                        <a class="text-white" href="#">
+                            <i class="fa-solid fa-volume-high"></i>
+                        </a>
                     </div>
                     <div class="volbar-total">
                         <div class="volbar-listened">
