@@ -67,7 +67,6 @@ h2 {
 h3 {
     font-weight: 600;
     color: var(--color-white);
-    
 }
 
 h4 {
@@ -101,6 +100,10 @@ a {
     overflow-y: hidden;
 }
 
+.pad-y-20 {
+    padding: 0px 20px;
+}
+
 .icon {
     width: 25px;
 }
@@ -121,11 +124,12 @@ a {
     display: flex;
     flex-flow: column;
     min-height: 480px;
+    overflow-y: hidden;
 }
 
 .logo-playlist-wrapper {
     height: calc(100% - 100px);
-    padding: 20px;
+    padding: 20px 0px;
 }
 
 .logo-wrapper>img {
@@ -164,7 +168,7 @@ a {
     display: inline-block;
     width: 40px;
     height: 40px;
-    background-color: var(--color-light-grey);
+    background-color: var(--color-grey);
     text-align: center;
     border-radius: 2px;
     margin-right: 5px;
@@ -189,8 +193,8 @@ a {
     display: flex;
     flex-flow: column;
     justify-content: flex-end;
-    background-color: var(--color-black);
     padding: 10px 20px;
+    background-color: var(--color-black);
 }
 
 .install-wrapper>*{
@@ -381,6 +385,7 @@ a {
     background-color: var(--color-grey);
     border-radius: 50px;
     margin: 7px 30px;
+    position: relative;
 }
 
 .playbar-listened {
@@ -395,6 +400,7 @@ a {
     height: 5px;
     background-color: var(--color-grey);
     border-radius: 50px;
+    position: relative;
 }
 
 .volbar-listened {
@@ -403,6 +409,130 @@ a {
     background-color: var(--color-white);
     border-radius: 50px; 
 }
+
+.volbar-point-max {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: var(--color-white);
+    position: absolute;
+    left: 90px;
+    bottom: -7px;
+    opacity: 0;
+}
+
+.volbar-point {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: var(--color-white);
+    position: absolute;
+    right: 90px;
+    top: -7px;
+    opacity: 0;
+}
+
+/*interactions*/
+
+
+.highlight:hover {
+    color: var(--color-white);
+    transition: all 0.5s;
+}
+
+.highlight-and-up:hover {
+    transform: translateY(-0.2rem);
+    transition: all 0.3s;
+}
+
+.highlight-and-move:hover {
+    margin-left: 3px;
+    color: var(--color-white);
+    transition: all 0.2s;
+}
+
+.cta-button-wrapper:hover {
+    transform: scale(1.05);
+    transition: all 0.3s;
+}
+
+li.option.highlight-and-move:hover {
+    border-left: 2px solid var(--color-highlight);
+    transition: 0.5s;
+}
+
+.option-wrapper>ul>li.highlight-and-move:hover>h4 {
+    color: var(--color-white);
+    transition: 0.5s;
+}
+
+.install-wrapper:hover>span {
+    color: var(--color-white);
+    transition: 0.5s;
+}
+
+.add-wrapper:hover {
+    margin-left: 3px;
+    transition: all 0.2s;
+}
+
+.add-wrapper:hover>.add {
+    background-color: var(--color-white);
+}
+
+.add-wrapper:hover>h3 {
+    color: var(--color-white);
+}
+
+.greenbar {
+    background-color: var(--color-highlight);
+    border-radius: 50px;
+    height: 2px;
+    width: 0%;
+    opacity: 0;
+    margin: 0 auto;
+}
+
+.card:hover {
+    transform: translateY(-1rem);
+    transition: all 0.3s;
+}
+
+.nav-menù:hover .greenbar {
+    animation: greenbar 0.3s forwards;
+    display: block;
+}
+
+.nav-menù:hover a {
+    color: var(--color-white);
+}
+
+.volbar-point-max:hover, .volbar-point:hover {
+    opacity: 1;
+}
+
+.volbar-point-max:hover ~ .playbar-listened {
+    background-color: var(--color-highlight);
+}
+
+.volbar-point:hover ~ .volbar-listened {
+    background-color: var(--color-highlight);
+}
+
+
+@keyframes greenbar {
+
+    0% {
+        opacity: 0;
+        width: 0%;
+    }
+
+    100% {
+        opacity: 1;
+        width: 100%;
+    }
+}
+
 
 /*media quary*/
 
@@ -490,6 +620,10 @@ a {
     .sidebar {
         width: 80px;
         justify-content: center;
+    }
+
+    .logo-playlist-wrapper {
+        padding: 20px;
     }
 
     .main-menù, .cta {

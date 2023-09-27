@@ -27,7 +27,7 @@
                 <div class="sidebar">
                     <div class="logo-playlist-wrapper">
                         <!--logo-->
-                        <div class="logo-wrapper">
+                        <div class="logo-wrapper pad-y-20">
                             <img src="img/logo.svg" alt="Spotify-logo">
                         </div>
                         <!--minor-logo-->
@@ -35,36 +35,36 @@
                             <img src="img/logo-small.svg" alt="Spotify-minor-logo">
                         </div>
                         <!--option menù-->
-                        <div class="option-wrapper">
+                        <div class="option-wrapper ">
                             <ul>
-                                <li class="option">
+                                <li class="option highlight-and-move pad-y-20">
                                     <a href="#">
                                         <img class="icon" src="img/home.svg" alt="home-icon">
                                     </a>
-                                    <h4>
+                                    <h4 class="">
                                         Home
                                     </h4>
                                 </li>
-                                <li class="option">
+                                <li class="option highlight-and-move pad-y-20">
                                     <a href="#">
                                         <img class="icon" src="img/search.svg" alt="search-icon">
                                     </a>
-                                    <h4>
+                                    <h4 class="font-scale">
                                         Cerca
                                     </h4>
                                 </li>
-                                <li class="option">
+                                <li class="option highlight-and-move pad-y-20">
                                     <a href="#">
                                         <img class="icon" src="img/libreria.svg" alt="libreria-icon">
                                     </a>
-                                    <h4>
+                                    <h4 class="font-scale">
                                         La tua libreria
                                     </h4>
                                 </li>
                             </ul>
                         </div>
                         <!--playlist-->
-                        <div class="playlist-wrapper">
+                        <div class="playlist-wrapper pad-y-20">
                             <h3>PLAYLIST</h3>
                             <div class="add-wrapper">
                                 <div class="add">
@@ -73,18 +73,18 @@
                                 <h3 class="text-grey">Crea Playlist</h3>
                             </div>
                             <ul>
-                                <li><a href="#">Nome Playlist</a></li>
-                                <li><a href="#">Nome Playlist</a></li>
-                                <li><a href="#">Nome Playlist</a></li>
-                                <li><a href="#">Nome Playlist</a></li>
-                                <li><a href="#">Nome Playlist</a></li>
-                                <li><a href="#">Nome Playlist</a></li>
-                                <li><a href="#">Nome Playlist</a></li>
+                                <li><a class="highlight-and-move" href="#">Nome Playlist</a></li>
+                                <li><a class="highlight-and-move" href="#">Nome Playlist</a></li>
+                                <li><a class="highlight-and-move" href="#">Nome Playlist</a></li>
+                                <li><a class="highlight-and-move" href="#">Nome Playlist</a></li>
+                                <li><a class="highlight-and-move" href="#">Nome Playlist</a></li>
+                                <li><a class="highlight-and-move" href="#">Nome Playlist</a></li>
+                                <li><a class="highlight-and-move" href="#">Nome Playlist</a></li>
                             </ul>
                         </div>
                     </div>
-                    <div class="propic-wrapper"> 
-                        <div class="install-wrapper">
+                    <div class="propic-wrapper pad-y-20"> 
+                        <div class="install-wrapper highlight-and-move">
                             <img class="icon" src="img/download.svg" alt="download-icon">
                             <span class="text-grey">
                                 installa app
@@ -104,12 +104,48 @@
                 <!--right main menù-->
                 <div class="main-menù">
                     <ul>
-                        <li><a href="#">IN EVIDENZA</a></li>
-                        <li><a href="#">PODCAST</a></li>
-                        <li><a href="#">CLASSIFICHE</a></li>
-                        <li><a href="#">GENERI E MOOD</a></li>
-                        <li><a href="#">NUOVE USCITE</a></li>
-                        <li><a href="#">SCOPRI</a></li>
+                        <li class="nav-menù">
+                            <a href="#">
+                                IN EVIDENZA
+                            </a>
+                            <div class="greenbar">
+                            </div>
+                        </li>
+                        <li class="nav-menù">
+                            <a class="highlight" href="#">
+                                PODCAST
+                            </a>
+                            <div class="greenbar">
+                            </div>
+                        </li>
+                        <li class="nav-menù">
+                            <a class="highlight" href="#">
+                                CLASSIFICHE
+                            </a>
+                            <div class="greenbar">
+                            </div>
+                        </li>
+                        <li class="nav-menù">
+                            <a class="highlight" href="#">
+                                GENERI E MOOD
+                            </a>
+                            <div class="greenbar">
+                            </div>
+                        </li>
+                        <li class="nav-menù">
+                            <a class="highlight" href="#">
+                                NUOVE USCITE
+                            </a>
+                            <div class="greenbar">
+                            </div>
+                        </li>
+                        <li class="nav-menù">
+                            <a class="highlight" href="#">
+                                SCOPRI
+                            </a>
+                            <div class="greenbar">
+                            </div>
+                        </li>
                     </ul>
                     <!--recently played-->
                     <section id="recently">
@@ -246,10 +282,10 @@
                     <!--favicon and folder-->
                     <div class="sidebar-audio-icons">
                         <a href="#">
-                            <i class="fa-regular fa-heart"></i>
+                            <i class="highlight fa-regular fa-heart"></i>
                         </a>
                         <a href="#">
-                            <i class="fa-regular fa-folder"></i>
+                            <i class="highlight fa-regular fa-folder"></i>
                         </a>
                     </div>
                 </div>
@@ -258,26 +294,26 @@
                     <!--play icons-->
                     <ul class="midbar-audio-icons">
                         <li>
-                            <i class="fa-solid fa-shuffle"></i>
+                            <i class="highlight-and-up fa-solid fa-shuffle"></i>
                         </li>
                         <li>
-                            <i class="fa-solid fa-backward-step"></i>
+                            <i class="highlight-and-up fa-solid fa-backward-step"></i>
                         </li>
                         <li class="play-icon">
-                            <i class="fa-regular fa-circle-play"></i> 
+                            <i class="highlight-and-up fa-regular fa-circle-play"></i> 
                         </li>
                         <li>
-                            <i class="fa-solid fa-forward-step"></i>  
+                            <i class="highlight-and-up fa-solid fa-forward-step"></i>  
                         </li>
                         <li>
-                            <i class="fa-solid fa-rotate-right"></i>
+                            <i class="highlight-and-up fa-solid fa-rotate-right"></i>
                         </li>
                     </ul>
                     <!--playbar-->
                     <div class="playbar">
                         <h4>0.25</h4>
-                        <!--div inside a div 2 different sizes and colors-->
                         <div class="playbar-total">
+                            <div class="volbar-point-max"></div>
                             <div class="playbar-listened">
                             </div>
                         </div>
@@ -288,16 +324,17 @@
                 <div class="sidebar-audio right">
                     <div class="sidebar-audio-icons">
                         <a class="text-white" href="#">
-                            <i class=" fa-solid fa-list"></i>
+                            <i class="highlight-and-up fa-solid fa-list"></i>
                         </a>
                         <a class="text-white" href="#">
-                            <i class="fa-solid fa-desktop"></i>
+                            <i class="highlight-and-up fa-solid fa-desktop"></i>
                         </a>
                         <a class="text-white" href="#">
-                            <i class="fa-solid fa-volume-high"></i>
+                            <i class="highlight-and-up fa-solid fa-volume-high"></i>
                         </a>
                     </div>
                     <div class="volbar-total">
+                        <div class="volbar-point"></div>
                         <div class="volbar-listened">
                         </div>
                     </div>
