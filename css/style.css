@@ -103,17 +103,21 @@ a {
     background-color: var(--color-black);
     display: flex;
     flex-flow: column;
-    justify-content: space-between;
     padding: 20px;
 }
 
 .logo-playlist-wrapper {
-    height: 50%;
+    height: 80%;
 }
 
 .logo-wrapper>img {
     width: 150px;
     padding: 10px;
+}
+
+.minor-logo-wrapper {
+    display: none;
+    width: 30px;
 }
 
 .option-wrapper {
@@ -128,6 +132,10 @@ a {
 
 .playlist-wrapper>h3,.add-wrapper {
     padding: 5px 0px;
+}
+
+.add-wrapper {
+    overflow: auto;
 }
 
 .add {
@@ -155,7 +163,7 @@ a {
 }
 
 .propic-wrapper {
-    height: 50%;
+    height: 20%;
     display: flex;
     flex-flow: column;
     justify-content: flex-end;
@@ -404,13 +412,7 @@ a {
 
 @media screen and (max-width: 768px) {
 
-    .card {
-        width: calc(100% / 3);
-    }
-
-    .sidebar-audio-album {
-        display: none;
-    }
+    /*cta*/
 
     .cta {
         align-items: center;
@@ -429,13 +431,103 @@ a {
         border: 0;
     }
 
+    /*sidebar*/
+
+    .sidebar-audio-album {
+        display: none;
+    }
+
+    /*main-menù*/
+
+    .main-menù>ul>li {
+        width: 100%;
+        text-align: center;
+    }
+
+    .card {
+        width: calc(100% / 2);
+    }
+
 }
 
 
 @media screen and (max-width: 576px) {
+
+    /*cta*/
     
+    .cta {
+        justify-content: flex-start;
+    }
+
+    .cta-button-wrapper>a {
+        font-size: 0.7rem;
+    }
+
+    .sidebar {
+        width: 80px;
+        justify-content: center;
+    }
+
+    .main-menù, .cta {
+        width: calc(100% - 80px);
+    }
+
+    /*main-menù*/
+
+    .main-menù>ul>li {
+        width: 100%;
+        text-align: center;
+    }
+
     .card {
-        width: calc(100% / 1);
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .sect-title {
+        text-align: center;
+        padding-left: 0;
+    }
+
+    .card-wrapper {
+        justify-content: center;
+    }
+
+    /*sidebar*/
+
+    .logo-wrapper {
+        display: none;
+    }
+
+    .minor-logo-wrapper {
+        display: block;
+    }
+
+    .option>h4 {
+        display: none;
+    }
+
+    .option {
+        padding-left: 5px;
+    }
+
+    .logo-wrapper, .playlist-wrapper, .bar {
+        display: none;
+    }
+
+    .install-wrapper>span {
+        display: none;
+    }
+
+    .install-wrapper>.icon {
+        width: 30px;
+        margin-bottom: 10px;
+    }
+
+    /*audiobar*/
+
+    .propic-wrap>h3 {
+        display: none;
     }
 
     .midbar-audio {
@@ -446,14 +538,5 @@ a {
         display: none;
     }
 
-    .cta-button-wrapper {
-        width: 100%;
-    }
-
-    .cta-button-wrapper>a {
-        font-size: 0.7rem;
-    }
-
-    
 }
 
