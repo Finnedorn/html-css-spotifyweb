@@ -289,6 +289,10 @@ a {
     position: relative;
 }
 
+#stranger-text-short {
+    display: none;
+}
+
 .card-img-rounded {
     border-radius: 50%;
     overflow: hidden;
@@ -612,6 +616,20 @@ li.option.highlight-and-move:hover {
         display: none;
     }
 
+    #stranger-text-short {
+        display: block;
+    }
+
+    #stranger-text-long {
+        display: none;
+    }
+
+    .main-menù>ul>li {
+        font-size: 1rem;
+        width: calc(100% / 4);
+        text-align: center;
+    }
+
 }
 
 @media screen and (max-width: 992px) {
@@ -624,6 +642,10 @@ li.option.highlight-and-move:hover {
         padding-right: 20px;
     }
     
+    .main-menù>ul>li {
+        font-size: 1rem;
+        width: calc(100% / 3);
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -656,8 +678,9 @@ li.option.highlight-and-move:hover {
     /*main-menù*/
 
     .main-menù>ul>li {
-        width: 100%;
-        text-align: center;
+        font-size: 0.9rem;
+        width: calc(100% / 2);
+        
     }
 
     .card {
@@ -695,13 +718,16 @@ li.option.highlight-and-move:hover {
     /*main-menù*/
 
     .main-menù>ul>li {
-        width: 100%;
+        font-size: 1rem;
+        width: 200px;
+        margin: 0 40px;
         text-align: center;
     }
 
     .card {
         width: 100%;
         max-width: 300px;
+        margin-top: 30px;
     }
 
     .sect-title {
@@ -711,6 +737,14 @@ li.option.highlight-and-move:hover {
 
     .card-wrapper {
         justify-content: center;
+    }
+
+    #stranger-text-short {
+        display: none;
+    }
+
+    #stranger-text-long {
+        display: block;
     }
 
     /*sidebar*/
