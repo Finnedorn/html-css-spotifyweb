@@ -31,7 +31,7 @@
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-    background: var(--color-black); 
+    background: var(--color-light-grey); 
     border-radius: 50px;
 }
 
@@ -123,7 +123,7 @@ a {
     background-color: var(--color-black);
     display: flex;
     flex-flow: column;
-    min-height: 480px;
+    min-height: 350px;
     overflow-y: hidden;
 }
 
@@ -182,6 +182,17 @@ a {
 .add-wrapper>h3 {
     display: inline-block;
     font-size: 1.1rem;
+}
+
+.playlist-wrapper{
+    display: flex;
+    flex-flow: column;
+    overflow-y: hidden;
+    height: 50%;
+}
+
+.playlist-wrapper>ul {
+    overflow-y: auto;
 }
 
 .playlist-wrapper>ul>li {
