@@ -201,7 +201,7 @@ a {
 
 .main-menù>ul {
     display: flex;
-    flex-flow: row;
+    flex-flow: row wrap;
     justify-content: center;
 }
 
@@ -260,7 +260,7 @@ a {
 .cta-button-wrapper {
     border-radius: 50px;
     border: 2px solid var(--color-white);
-    margin: 20px;
+    margin: 20px 30px 20px;
     padding: 13px 50px;
 }
 
@@ -276,7 +276,7 @@ a {
     height: 90px;
     background-color: var(--color-dark-grey);
     position: fixed;
-    z-index: 1000;
+    z-index: 1001;
     bottom: 0;
     left: 0;
     display: flex;
@@ -316,7 +316,7 @@ a {
 }
 
 .midbar-audio {
-    width: 80%;
+    width: 60%;
 }
 
 .midbar-audio-icons, .playbar {
@@ -371,3 +371,89 @@ a {
     background-color: var(--color-white);
     border-radius: 50px; 
 }
+
+/*media quary*/
+
+@media screen and (max-width: 1200px) {
+    
+    .sidebar-audio-album {
+        padding-right: 30px;
+    }
+
+    .sidebar-audio-album>div>h4, h5 {
+        display: none;
+    }
+
+    .volbar-total {
+        display: none;
+    }
+
+}
+
+@media screen and (max-width: 992px) {
+
+    .card {
+        width: calc(100% / 4);
+    }
+    
+    .sidebar-audio-album {
+        padding-right: 20px;
+    }
+    
+}
+
+@media screen and (max-width: 768px) {
+
+    .card {
+        width: calc(100% / 3);
+    }
+
+    .sidebar-audio-album {
+        display: none;
+    }
+
+    .cta {
+        align-items: center;
+    }
+
+    .cta-button-wrapper>a {
+        font-size: 0.8rem;
+        display: inline-block;
+        border: 2px solid var(--color-white);
+        padding: 13px 30px;
+        border-radius: 50px;
+    }
+
+    .cta-button-wrapper {
+        margin: 0;
+        border: 0;
+    }
+
+}
+
+
+@media screen and (max-width: 576px) {
+    
+    .card {
+        width: calc(100% / 1);
+    }
+
+    .midbar-audio {
+        width: 100%;
+    }
+
+    .sidebar-audio {
+        display: none;
+    }
+
+    .cta-button-wrapper {
+        width: 100%;
+    }
+
+    .cta-button-wrapper>a {
+        font-size: 0.7rem;
+    }
+
+    
+}
+
