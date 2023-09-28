@@ -17,7 +17,9 @@
     --color-grey: #717171;
     --color-light-grey: #c1c1c1;
     --color-highlight: #1fdf64;
+    --color-blue-gradient:linear-gradient(to bottom, #1A8ACD 0%, 41.75257682800293%, #0F527B 83.50515365600586%, 91.75257682800293%, #0C3B57 100%);
 }
+
 
 /*scrollbar*/
 
@@ -76,7 +78,7 @@ h4 {
 
 img {
     width: 100%;
-    display: inline-block;
+    display: block;
 }
 
 ul>li {
@@ -602,6 +604,54 @@ li.option.highlight-and-move:hover {
 }
 
 /*-----PAGE-02-----*/
+
+.album-menù {
+    width: calc(100% - 250px);
+    background-color: var(--color-dark-color);
+    overflow-y: scroll;
+    padding: 50px 30px 0;
+}
+
+.album-frame {
+    width: 100%;
+    background-image: var(--color-blue-gradient);
+    border-radius: 30px;
+}
+
+.album-header {
+    display: flex;
+    flex-flow: row wrap;
+    padding: 100px 0px 50px 0px;
+}
+
+.album-img {
+    width: 30%;
+    max-width: 300px;
+    margin-left: 30px;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.album-title {
+    width: 70%;
+    color: var(--color-white);
+    padding: 130px 25px 0px;
+}
+
+.album-title>h4 {
+    color: var(--color-white);
+}
+
+.album-title>h1 {
+    font-size: 4rem;
+    padding: 20px 0px;
+}
+
+.album-body {
+    background-color: #00000058;
+
+}
 
 
 
